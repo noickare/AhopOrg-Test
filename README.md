@@ -17,3 +17,32 @@
 - Implement Restful API of "Meeting" in the both of server and client sides (40min)<br/>
   Focus Code Style and Code Optimization. <br/>
   Reference other functions.
+
+  ## RUNNING
+
+1. Set up environment files:
+   ```bash
+   cp Client/.env.example client/.env
+   cp Server/.env.example Server/.env
+   ```
+   Then edit `Server/.env` and set your MongoDB URL in the `DB_URL` variable.
+
+2. Open two terminal windows and run the following commands:
+
+   Terminal 1 (Server):
+   ```bash
+   cd Server
+   yarn install
+   yarn start
+   ```
+
+   Terminal 2 (Client):
+   ```bash
+   cd Client
+   yarn install
+   yarn start
+   ```
+
+The application should now be running with the server on port 5001 and the client on port 3000.
+
+  
